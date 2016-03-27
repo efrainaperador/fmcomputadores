@@ -1,0 +1,308 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	font-family: 'open_sansregular';
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/******************************* Estilos FM *********************************/
+
+header{
+	background: #000;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	position: relative;
+	padding: 0 30px;
+	box-sizing: border-box;
+}
+
+header nav, header nav ul{
+	width: 100%;
+	height: 100%;
+	line-height: inherit;
+	position: relative;
+	color: #FFF;
+}
+
+header ul li{
+	display: block;
+	float: left;
+	width: auto;
+	padding: 0 20px;
+	color: #FFF;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: 'open_sansextrabold';
+	height: 100%;
+}
+
+header ul li:hover{
+	background: #FFF;
+	color: #000;
+	cursor: pointer;
+}
+
+header ul li.carrito{
+	float: right;
+}
+
+header ul li.search{
+    height: 100%;
+    box-sizing: border-box;
+    line-height: 35px;
+    position: relative;
+}
+
+header ul li.search:hover{
+	background: #000;
+	color: #FFF;
+	cursor: pointer;
+}
+
+header ul li.search input{
+	width: 20px;
+	height: 22px;
+	line-height: 22px;
+	box-sizing: border-box;
+	-webkit-transition: width 1s; /* Safari */
+    transition: width 1s;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: #000;
+    background-image: url(../img/search-icon-white.png);
+    background-repeat: no-repeat;
+    background-position: center right; 
+    background-size: 20px 20px;
+}
+
+header ul li.search input:focus{
+	background-color: #FFF;
+	background-image: url(../img/search-ico.png);
+	width: 100%;
+	padding: 0 5px;
+}
+
+header ul li.search i{
+	position: absolute;
+	right: 0;
+	z-index: 10;
+	top: 50%;
+	margin-top: -8px;
+}
+
+
+
+/************* Fin Header ******************/
+
+footer, footer div{
+	width: 100%;
+	background: #000;
+	color: #FFF;
+	position: relative;
+    overflow: hidden;
+}
+
+footer div{
+	padding: 30px 20px;
+}
+
+footer div section{
+	position: relative;
+	width: 33%;
+	box-sizing: border-box;
+	display: block;
+	float: left;
+	padding: 0 10px;
+}
+
+footer div .copy-mention{
+    text-align: center;
+    width: 100%;
+    padding: 50px 0 10px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+footer div section h2{
+	font-weight: bold;
+	font-family: 'open_sansextrabold';
+	padding: 0 0 15px 0;
+	font-size: 18px;
+}
+
+footer div section ul{
+	width: 100%;
+	height: auto;
+	padding: 0;
+	margin-top: 0;
+}
+
+footer div section ul li{
+	line-height: 30px;
+	white-space: normal;
+	word-break: break-word;
+}
+
+
+/************* Slider styles ******************/
+
+.slider{
+	height: 500px;
+	margin-bottom: 0;
+}
+
+.slider > button{
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.slider .slick-list{
+	height: 100%;
+}
+
+.slider .slick-list .slick-track{
+	height: 100%;
+}
+
+.slider .slick-list .slick-track > div{
+	height: 100%;
+}
+
+.slick-slide img{
+	float: right;
+	top: 0;
+	right: 0;
+	width: 600px;
+	height: auto;
+}
+
+.slick-slide div{
+	float: left;
+}
+
+.slider-one{
+	background: #92C859;
+	color: #FFF;
+}
+
+.slider-two{
+	background: #EA5E67;
+	color: #FFF;
+}
+
+.slider-three{
+	background: #FEB25A;
+	color: #FFF;
+}
+
+.slider-four{
+	background: #756DEC;
+	color: #FFF;
+}
+
+.slick-slide > div{
+	position: relative;
+	top: 50%;
+	margin: -40px 50px 0 100px;
+	max-width: 35%;
+
+}
+
+.slick-slide > div h2{
+	font-size: 40px;
+	font-family: 'open_sansextrabold';
+}
+
+.slick-slide > div h5{
+	font-size: 26px;
+	margin: 10px 0;
+    width: auto;
+    float: left;
+    display: inline;
+}
+
+.featured-products{
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+
+.featured-products ul{
+	width: 100%;
+	text-align: center;
+}
+
+.featured-products ul li{
+	width: 270px;
+	display: inline-block;
+	margin: 10px;
+}
+
+.map{
+	width: 100%;
+	height: 400px;
+}
+
+.featured-products{
+	width: 100%;
+	display: block;
+	padding: 30px 15px 20px;
+}
+
+.featured-products h1{
+	width: 100%;
+	text-align: center;
+	font-family: 'open_sansextrabold';
+	font-weight: bold;
+	margin: 0 auto 20px;
+	font-size: 26px;
+}
