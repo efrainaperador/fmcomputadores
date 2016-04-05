@@ -8,16 +8,18 @@ fmcomputadores.controller('homeCtrl', ['$scope', function($scope){
   		autoplaySpeed: 4000
 	});
 
-	setTimeout(function(){
-		$('.slider img').each(function(index, elem){
+	
+	$('.slider img').each(function(index, elem){
+		elem.onload = function(){
 			var parentH = $(elem.parentElement).height();
 			var h = elem.offsetHeight;
 			var margin = parentH - h;
 			margin = margin/2;
-			$(elem).css('margin-top',margin+'px');
-		});	
-	}, 10);
+			$(elem).css('margin-top',margin+'px');	
+		}
+	});	
 	
+
 }]).
 directive('myMap', function() {
     // directive link function

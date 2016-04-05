@@ -1,0 +1,19 @@
+<div class="product-view">
+	<div class="left-view">
+		<img class="main-image" src="{{product.imagenes[0]}}">
+		<div class="carousel">
+			<img ng-repeat="img in product.imagenes" src="{{img}}">
+		</div>
+	</div>
+	<div class="right-view">
+		<p>{{product.nombre}}</p>
+		<p>
+			<strong>{{product.precio}}</strong>
+		</p>
+		<p>
+			<strong>Marca:</strong>
+			<span>{{product.marca.nombre}}</span>
+		</p>
+		<button>Agregar al carrito</button>
+	</div>
+</div>

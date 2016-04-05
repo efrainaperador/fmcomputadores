@@ -1,16 +1,16 @@
 <div class="featured-products" ng-controller="productosCtrl">
 	<h1>PRODUCTOS DESTACADOS</h1>
 	<ul>
-		<li ng-repeat="el in products">
+		<li ng-repeat="el in products" data-id="{{el.id}}" ng-click="loadProduct($event)">
 			<!--<img src="http://livedemo00.template-help.com/opencart_58140/image/cache/catalog/product-52-270x230.png">
 			<legend>48-Inch 1080p 60Hz Smart LED TV</legend>
 			<p>
 				<strong>$ XXXXXXX</strong>
 			</p>-->
-			<img src="{{el.url}}">
-			<legend>{{el.legend}}</legend>
+			<img src="{{el.imagenes[0]}}">
+			<legend>{{el.nombre}}</legend>
 			<p>
-				<strong>$ {{el.price}}</strong>
+				<strong>$ {{el.precio}}</strong>
 			</p>
 		</li>
 	</ul>
