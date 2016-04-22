@@ -98,6 +98,7 @@ public class MarcaPersistencia {
         Marca m=new Marca();
         m.setId(rs.getInt("id"));
         m.setNombre(rs.getString("nombre"));
+        m.setLogo(rs.getString("logo"));
         return m;
     }
     
