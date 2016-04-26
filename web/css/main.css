@@ -329,6 +329,10 @@ footer div section ul li{
 .product-view .left-view{
 	display: inline-block;
 	width: 48%;
+	height: 515px;
+	position: relative;
+	top: 0;
+	left: 0;
 	margin: 20px 1%;
 	box-sizing: border-box;
 	border: solid 1px #DDD;
@@ -336,20 +340,71 @@ footer div section ul li{
 	overflow: hidden;
 }
 
-.product-view .left-view img.main-image{
-	width: 98%;
-	height: auto;
-	margin: 0 auto;
+.product-view .left-view .carousel li > img{
+	max-width: 100%;
 }
 
-.product-view .left-view .carousel{
-	width: 100%;
-	white-space: nowrap;
+.product-view .right-view{
+	width: 49%;
+	display: inline-block;
+	vertical-align: top;
+	box-sizing: border-box;
+	padding: 20px 2%
 }
 
-.product-view .left-view .carousel img{
-	display: inline;
-	height: 60px;
-	width: auto;
-	margin: 0 10px 0 0;
+.product-view .right-view h2{
+	font-weight: bold;
+	text-align: left;
+	font-size: 24px;
+	line-height: 32px;
+	margin: 0 0 15px;
+	border-bottom: 1px solid #000;
+}
+
+.product-view .right-view .product-description{
+	font-size: 14px;
+	line-height: 17px;
+	text-align: justify;
+}
+
+.product-view .right-view ul{
+	font-size: 14px;
+	margin: 15px 0;
+	padding: 0 15px;
+}
+
+.product-view .right-view ul li{
+	margin: 5px 0;
+	text-align: justify;
+	width: 80%;
+	list-style: circle;
+	padding: 5px 0;
+}
+
+.product-view .right-view .product-price{
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.product-view .right-view .product-price:before{
+	content: 'COP $';
+}
+
+.product-view .right-view .product-brand{
+	font-size: 24px;
+	font-weight: bold;
+	margin: 0 0 15px;
+}
+
+.product-view .right-view .add-cart{
+	margin: 15px 0;
+	width: 250px;
+	height: 35px;
+	line-height: 35px;
+	background: none;
+	background-color: #92C859;
+	color: #FFF;
+	border: solid 1px #92C840;
+	text-transform: uppercase;
+	font-weight: bold;
 }

@@ -1,19 +1,25 @@
 <div class="product-view">
-	<div class="left-view">
-		<img class="main-image" src="{{product.imagenes[0]}}">
-		<div class="carousel">
-			<img ng-repeat="img in product.imagenes" src="{{img}}">
-		</div>
+	<div class="left-view" id="slider">
+		<ul class="carousel">
+			<li ng-repeat="img in product.imagenes" data-thumb="{{img}}" data-src="{{img}}">
+				<img src="{{img}}">	
+			</li>
+		</ul>
 	</div>
 	<div class="right-view">
-		<p>{{product.nombre}}</p>
-		<p>
-			<strong>{{product.precio}}</strong>
-		</p>
-		<p>
-			<strong>Marca:</strong>
+		<h2>{{product.nombre}}</h2>
+		<p class="product-brand">
 			<span>{{product.marca.nombre}}</span>
 		</p>
-		<button>Agregar al carrito</button>
+		<p class="product-description">{{product.descripcion}}</p>
+		<ul>
+			<li ng-repeat="esp in product.especificaciones">
+				{{esp}}
+			</li>
+		</ul>
+		<p class="product-price">
+			<strong>{{product.precio}}</strong>
+		</p>
+		<button id="addCart" class="add-cart">Agregar al carrito</button>
 	</div>
 </div>
