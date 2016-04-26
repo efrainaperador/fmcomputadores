@@ -13,6 +13,7 @@ public class Marca {
     
     private int id;
     private String nombre;
+    private String logo;
 
     public int getId() {
         return id;
@@ -29,5 +30,14 @@ public class Marca {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
+
+    public String getLogo() {
+        return logo;
+    }
+
+    public void setLogo(String logo) {
+        this.logo = logo;
+    }
+    
     
 }
